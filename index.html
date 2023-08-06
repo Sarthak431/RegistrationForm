@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- Add your CSS styling here or link an external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="registration-form">
+    <h1>Registration Form</h1>
+    <form id="registrationForm" onsubmit="return submitForm()">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+      </div>
+
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber">
+      </div>
+
+
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+      </div>
+
+      <div class="form-group">
+        <label for="interests">Interests (comma-separated):</label>
+        <input type="text" id="interests" name="interests">
+      </div>
+
+      <div id="A">
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+      </div>
+
+      <div id="A" >
+        <label for="termsAndConditions">I agree to the Terms and Conditions:</label>
+        <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+    <div id="registrationData">
+      <!-- Display registration data here after submitting the form -->
+    </div>
+  </div>
+
+  <!-- Add your JavaScript here -->
+  <script src="index.js"></script>
+</body>
+</html>
