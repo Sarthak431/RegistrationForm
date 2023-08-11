@@ -1,6 +1,5 @@
 
 function submitForm() {
-    // Retrieve form data and display it in the "registrationData" div
     const fullName = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
     const username = document.getElementById('username').value;
@@ -25,5 +24,5 @@ function submitForm() {
       <div><strong>Newsletter Subscription</strong>: <p>${newsletter ? 'Yes' : 'No'}</p></div>
     `;
 
-    return false; // Prevent form submission to keep data displayed on the page
+    return false; 
   }
